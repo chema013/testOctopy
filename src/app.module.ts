@@ -16,7 +16,7 @@ import { UserModule } from './user/user.module';
       database: process.env.TYPEORMDATABASE,
       entities: [__dirname + './**/**/*entity{.ts,.js}'],
       autoLoadEntities: true,
-      synchronize: false,
+      synchronize: true,
     }), UserModule],
   controllers: [],
   providers: [],
